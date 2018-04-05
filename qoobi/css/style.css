@@ -242,7 +242,7 @@ section .nav-section {
     padding-top: 69px;
     position: relative;
     animation-delay: 4.5s;
-    animation-name: explore-1;
+    animation-name: explore-1; 
 }
 
 
@@ -256,7 +256,7 @@ section .nav-section {
     content:"";
     top: 62px;
     left: 77px;
-    animation-name: circle3;
+    animation-name: circle1;
     animation-timing-function: linear;
     animation-delay: 5s;
     animation-duration: 0.5s;
@@ -276,7 +276,7 @@ section .nav-section {
     animation-direction: alternate;
     animation-name: line3;
     animation-duration: 1.5s;
-    animation-delay: 5.5s;
+    animation-delay: 5s; 
     animation-fill-mode: both;
     animation-timing-function: linear;
 }
@@ -289,7 +289,7 @@ section .nav-section {
     padding-top: 111px;
     position: relative;
     animation-delay: 2.5s;
-    animation-name: explore-1;
+    animation-name: explore-1; 
 }
 
 .Explore__2::before {
@@ -302,11 +302,11 @@ section .nav-section {
     content:"";
     top: 104px;
     left: 250px;
-    animation-name: circle2;
+     animation-name: circle2;
     animation-timing-function: linear;
-    animation-delay: 3s;
+    animation-delay: 3s; 
     animation-duration: 0.5s;
-    animation-fill-mode: both;
+    animation-fill-mode: both;  
 }
 
 .Explore__2::after {
@@ -331,8 +331,8 @@ section .nav-section {
     padding-left: 89px;
     padding-top: 183px;
     position: relative;
-    animation-delay: 0.5s;
-    animation-name: explore-1;
+    animation-delay: 0.5s; 
+    animation-name: explore-1;  
 }
 
 .Explore__1::before {
@@ -347,9 +347,9 @@ section .nav-section {
     left: 75px;
     animation-name: circle1;
     animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-delay: 1s; 
     animation-duration: 0.5s;
-    animation-fill-mode: both;
+    animation-fill-mode: both;  
 }
 
 .Explore__1::after {
@@ -364,9 +364,9 @@ section .nav-section {
     animation-direction: alternate;
     animation-name: line1;
     animation-duration: 1.5s;
-    animation-delay: 1.5s;
+    animation-delay: 1.5s; 
     animation-fill-mode: both;
-    animation-timing-function: linear;
+    animation-timing-function: linear; 
 }
 
 
@@ -559,13 +559,20 @@ section .nav-section {
     position: absolute;
     content: "";
     background: url("../img/TURNTABLE.png") no-repeat 0 0;
-    border: 10px solid black;
+    border: 10px solid black; 
     width: 82px;
     height: 70px;
     background-size: cover;
     top: 147px;
     left: 122px;
+    /* animation-name: turntable;
+    animation-duration: 2s;
+    animation-delay: 3s; 
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: 4; */
 }
+
 
 .Explore__arrow {
     margin: 0 auto;
@@ -1182,7 +1189,7 @@ section .nav-section {
 }
 
 .App__img-hand {
-    margin-top: -120px;
+    margin-top: -112px;
     position: relative;
 }
 
@@ -1195,7 +1202,7 @@ section .nav-section {
     content:"";
     left: 0;
     top: -1px;
-z-index: 1;
+    z-index: 1;
 }
 
 .App__img-phone {
@@ -1210,8 +1217,92 @@ z-index: 1;
 }
 
 .App__links {
+    margin: 0 auto;
+    width: 345px;
     text-align: center;
     color: rgb(111, 199, 223);
+    font-size: 25px;
+    padding-top: 170px;
+    margin-top: 0;
+}
+
+.App__links p {
+    line-height: 30px;
+    width: 345px;
+    padding-top: 24px;
+    border-top: 1px solid rgb(111, 199, 223);
+    margin-bottom: 12px;
+}
+
+.App__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Specs__title {
+    color:rgb(111, 199, 223);
+    font-size: 70px;
+    text-align: center;
+    font-family: "plumblight","Arial", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+    padding-top: 36px;
+    font-weight: 100;
+    margin-bottom: 0;
+    line-height: 70px;
+    padding-bottom: 29px;
+}
+
+.Specs {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Specs__5-1 {
+    padding-left: 80px;
+    font-size: 25px;
+}
+
+.Specs__10-6 {
+    font-size: 25px;
+    padding-left: 70px;
+}
+
+.Specs__4-1 {
+    display: block;
+    height: auto;
+    padding-top: 60px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.Specs__img-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 70px;
+    padding-right: 15px;
+    
+}
+
+.Specs__text {
+    width: 45%;
+    padding-right: 20px;
+    font-size: 22px;
+    color:rgb(111, 199, 223);
+    text-align: left;
+}
+
+.Specs__property {
+    width: 40%;
     font-size: 23px;
-    padding-top: 200px;
+    color: rgb(168, 168, 166);
+    text-align: left;
+}
+
+.Specs__wrap {
+    line-height: 40px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
