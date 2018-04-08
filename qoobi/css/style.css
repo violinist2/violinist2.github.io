@@ -1,5 +1,5 @@
 body {
-    min-width: 320px;
+    min-width: 320px; 
     width: 375px;
     background: rgb(0, 0, 0); 
     color: rgb(168, 168, 166);
@@ -28,6 +28,12 @@ body {
     font-style: normal;   
  }
 
+ a {
+    cursor: pointer;
+    text-decoration: none;
+    }
+ 
+ 
  header {
      display: flex;
      flex-direction: column;
@@ -117,6 +123,8 @@ section .nav-section {
 
 .nav-section__text {
     text-align: center;
+    display: block;
+    cursor: pointer;
     padding-right: 86px;
     margin-top: 12px;
     line-height: 30px;
@@ -518,7 +526,6 @@ section .nav-section {
     background-size: cover;
     top: 192px;
     left: 152px;
-    
 }
 
 .Explore__text-block3 {
@@ -638,9 +645,6 @@ section .nav-section {
     padding-right: 15px;
     margin: 0 auto;
 }
-
-
-
 
 .wtubes__without {
     width: 172px;
@@ -934,9 +938,9 @@ section .nav-section {
 
 
 .Design__img-production img {
-     margin-top: -68px; 
-     border-bottom: 1px solid rgb(111, 199, 223);
-    }
+    margin-top: -68px; 
+    border-bottom: 1px solid rgb(111, 199, 223);
+}
 
 .Design__production-title {
     font-family: "plumblight","Arial", sans-serif;
@@ -1282,19 +1286,36 @@ section .nav-section {
     padding-top: 5px;
     padding-left: 70px;
     padding-right: 15px;
-    
+    animation-name: qoobi;
+    animation-duration: 2s;
 }
+
+/* @keyframes qoobi {
+    0% {
+     
+        opacity: 0.5; 
+        transform: scale(0.2);
+    }
+100% {
+    opacity: 1;
+    transform: scale(1); 
+   
+}
+
+} */
+
 
 .Specs__text {
     width: 45%;
-    padding-right: 20px;
+    padding-right: 30px;
     font-size: 22px;
     color:rgb(111, 199, 223);
     text-align: left;
 }
 
 .Specs__property {
-    width: 40%;
+    width: 42%;
+    margin-right: 20px;
     font-size: 23px;
     color: rgb(168, 168, 166);
     text-align: left;
@@ -1302,7 +1323,508 @@ section .nav-section {
 
 .Specs__wrap {
     line-height: 40px;
-    padding-top: 25px;
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.Preorder {
+    margin: 0 auto;
+    width: 345px;
+}
+
+.Preorder__title {
+    color:rgb(211,0,5);
+    text-align: center;
+    font-family: "plumblight","Arial", sans-serif;
+    font-weight: 100; 
+    font-size: 70px;
+    line-height: 35px;
+    position: relative;
+}
+
+.Preorder__title::after {
+    position: absolute;
+    background: url("../img/qoobi-one-LOGO.png") no-repeat 0 0;
+    width: 298px;
+    height: 51px;
+    content: "";
+    top: 75px;
+    left: 35px;
+}
+
+.Preorder__price {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:rgb(111, 199, 223);
+    text-align: center;
+    padding-top: 56px;
+}
+
+label {
+    font-size: 0;
+}
+
+.Preorder__name {
+    margin-bottom: 25px;
+}
+
+.Preorder__name input {
+    background: black;
+    line-height: 60px;
+    font-size: 25px;
+    padding-left: 27px;
+    height: 60px;
+    width: 316px;
+    border: 1px solid rgb(111, 199, 223);
+}
+
+
+
+
+.Preorder__post input {
+    background: black;
+    font-size: 25px;
+    padding-left: 27px;
+    height: 60px;
+    width: 316px;
+    border: 1px solid rgb(111, 199, 223); 
+}
+
+input:focus {
+    background: white;
+    color: black;
+}
+
+.Preorder__submit button {
+    margin-top: 45px;
+    text-align: center;
+    font-family: "plumbregular";
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 0;
+    width: 345px;
+    font-size: 25px;
+    padding: 0;
+    line-height: 62px;
+    background: rgb(143, 198, 221);
+    color: black;
+}
+
+.Preorder__submit button:hover {
+    background: rgb(151, 219, 248);
+}
+
+.Preorder__submit button:active {
+    background: rgba(143,198,221,0.5);
+}
+
+.Preorder__text {
+    word-spacing: -0.8px;
+    font-size: 22.5px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.Team {
+    margin: 0 auto;
+    width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Team__title {
+    color:rgb(111, 199, 223);
+    font-size: 70px;
+    text-align: center;
+    font-family: "plumblight","Arial", sans-serif;
+    margin-top: 0;
+    padding-top: 36px;
+    font-weight: 100;
+    margin-bottom: 0;
+    line-height: 70px;
+    word-spacing: -11px; 
+}
+
+.Team__name {
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 27px;
+}
+
+.Team__text {
+    color: rgb(111, 199, 223);
+    font-size: 19px;
+    width: 164px;
+    text-align: right;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.Team__text--Klukin {
+    margin-top: 7px;
+}
+
+.Team__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(111, 199, 223);
+}
+
+.Nav-low {
+    width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.Nav-low__list {
+    margin-top: 42px;
+    padding-left: 0;
+    color: rgb(111, 199, 223);
+    line-height: 52px;
+    font-size: 34px;
+    list-style-type: none;
+}
+
+.Nav-low a {
+    color: rgb(111, 199, 223);
+}
+
+.Nav-low__item1,
+.Nav-low__item2,
+.Nav-low__item3,
+.Nav-low__item4,
+.Nav-low__item5,
+.Nav-low__item6,
+.Nav-low__item7,
+.Nav-low__item8 {
+    position: relative;
+}
+
+.Nav-low__q {
+    padding-left: 2px;
+    height: 50px;
+}
+
+
+.Nav-low__item1::before {
+    position: absolute;
+    content:"";
+    width: 202px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 117px;
+}
+
+.Nav-low__item1::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item2::before {
+    position: absolute;
+    content:"";
+    width: 135px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 183px;
+}
+
+.Nav-low__item2::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item3::before {
+    position: absolute;
+    content:"";
+    width: 205px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 113px;
+}
+
+.Nav-low__item3::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item4::before {
+    position: absolute;
+    content:"";
+    width: 251px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 66px;
+}
+
+.Nav-low__item4::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item5::before {
+    position: absolute;
+    content:"";
+    width: 215px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 102px;
+}
+
+.Nav-low__item5::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item6::before {
+    position: absolute;
+    content:"";
+    width: 165px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 162px;
+}
+
+.Nav-low__item6::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item7::before {
+    position: absolute;
+    content:"";
+    width: 135px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 186px;
+}
+
+.Nav-low__item7::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Nav-low__item8::before {
+    position: absolute;
+    content:"";
+    width: 195px;
+    height: 1px;
+    background: rgb(111, 199, 223);
+    top: 26px;
+    left: 124px;
+}
+
+.Nav-low__item8::after {
+    position: absolute;
+    content:"";
+    width: 28px;
+    background: black url("../img/footer-element.png") no-repeat 0 0;
+    height: 50px;
+    top: -4px;
+    left: 317px;
+}
+
+.Contact {
+    width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.Contact__address {
+    margin-top: 91px;
+    font-size: 23px;
+    border: 1px solid rgb(111, 199, 223);
+    position: relative;
+}
+
+.Contact__address p {
+    text-align: center;
+    line-height: 27px;
+    width: 210px;
+    padding: 100px 70px 14px 62px;
+}
+
+.Contact__address::before {
+    position: absolute;
+    content:"";
+    width: 84px;
+    height: 95px;
+    background: black url("../img/Q.png") no-repeat 0 0;
+    top: -52px;
+    left: 125px;
+    border: 5px solid black;
+}
+
+.Contact__address::after {
+    position: absolute;
+    content:"";
+    width: 188px;
+    height: 32px;
+    background: black url("../img/qoobi B.V..png") no-repeat 0 0;
+    top: 60px;
+    left: 75px;
+}
+
+.Contact__tel {
+    font-weight: 100;
+    font-size: "plumblight", "Arial", sans-serif;
+    border: 1px solid rgb(111, 199, 223);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 43px;
+    line-height: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+
+.Contact__tel::before {
+    position: absolute;
+    content:"";
+    width: 34px;
+    height: 33px;
+    background: black url("../img/PHONE ICON.png") no-repeat 0 0;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    top:-20px;
+    left: 151px;
+}
+
+.Contact__mail {
+    position: relative;
+    font-weight: 100;
+    font-size: "plumblight", "Arial", sans-serif;
+    border: 1px solid rgb(111, 199, 223);
+    font-size: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    margin-top: 43px;
+    line-height: 25px;
+}
+
+.Contact__mail::before {
+    position: absolute;
+    content:"";
+    width: 35px;
+    height: 24px;
+    background: black url("../img/ENVELOPE ICON.png") no-repeat 0 0;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    top: -14px;
+    left: 150px;
+}
+
+
+
+.Contact__social {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.electronics {
+    width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.electronics__promward {
+    padding-bottom: 3px;
+}
+
+.electronics__text1 {
+    margin: 0 auto; 
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 40px;
+}
+
+.electronics__text2 {
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -0.2px;
+    width: 100%; 
+    padding-bottom: 15px;
+}
+
+.electronics__sensor {
+    padding-bottom: 40px;
+}
+.developer {
+    width: 343px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 1px solid rgb(111, 199, 223);
+    text-align: center;
+}
+
+.developer__link {
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    color: rgb(168, 168, 166);
+}
+
+.developer__link:hover {
+    color: rgba(168, 168, 166,0.5);
+}
+
+.main-footer {
+    padding-bottom: 40px;
 }
