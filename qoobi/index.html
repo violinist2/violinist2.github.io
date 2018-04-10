@@ -16,12 +16,27 @@
 </head>
 <body>
 <header>
+  <section id="menu" class="Slide-menu__close">
+    <div class="Slide-menu__x">close</div>
+    <ul class="Slide-menu__list">
+      <a href="#Explore"><li class="Slide-menu__item1">Explore</li></a>
+      <a href="#Why Tubes?"><li class="Slide-menu__item2">Why Tubes?</li></a>
+      <a href="#Design"><li class="Slide-menu__item3">Design</li></a>
+      <a href="#App"><li class="Slide-menu__item4">App</li></a>
+      <a href="#Specs"><li class="Slide-menu__item5">Specs</li></a>
+      <a href="#Preorder"><li class="Slide-menu__item6">Pre-Order</li></a>
+      <a href="#Qoobi-Team"><li class="Slide-menu__item7">Qoobi Team</li></a>
+      <a href="#Contact"><li class="Slide-menu__item8">Contact</li></a>
+      <a href="#home"><li class="Slide-menu__q"><img src="img/Home.png" width="45" height="51" alt="Qoobi"></li></a>
+    </ul>
+  </section> 
   <a name="home"><nav id="navigation" class="nav-section_container">
-      <div class="nav-section__main-panel">
+ 
+    <div class="nav-section__main-panel">
         <img class="nav-section__logo" src="img/logo.png" width="208" height="35">
         <div id="lang" class="nav-section__jpn">toggle lang</div>
-        <div class="nav-section__burger nav-section__close">open</div>
-      </div>
+        <div id="burger" class="nav-section__burger">open</div>
+    </div>
     </nav></a>
     <section class="nav-section">
       <h1 class="nav-section__title">Wireless Tube Pre-Amp</h1>
@@ -30,7 +45,7 @@
           <h2 class="nav-section__text">I Want THAT!</h2>
         </article>
       </a>
-      <video class="nav-section__video" autoplay preload="auto" width="345" height="245" data-autoplay loop poster="img/video/black6.gif" 
+      <video class="nav-section__video" autoplay preload="auto" width="345" height="245" loop poster="img/video/black6.gif" 
         <source src="img/video/black6.gif"> 
       </video>
       <div class="nav-section__badge">
@@ -226,7 +241,7 @@
   <div class="Team__face">
     <h3 class="Team__name">Sergei Avdeev</h3>
     <div class="Team__wrapper">
-      <img src="img/Sergei Avdeev PHOTO@1x.jpg" width="177" height="193" alt="Sergey Avdeev">
+      <img src="img/Sergei-Avdeev-PHOTO1@x.png" width="177" height="193" alt="Sergey Avdeev">
       <p class="Team__text">Acclaimed pop music and media projects producer. A&nbsp;reputable expert&nbsp;in the entertainment industry.</p>
     </div>
   </div>
@@ -296,19 +311,23 @@
     </footer>
 
 
- <script src="js/jquery-3.3.1.min.js"></script> 
+       <script src="js/menu.js"></script> 
+      <script src="js/jquery-3.3.1.min.js"></script> 
  <!-- слайдер -->
- <script src="slick/slick.min.js"></script>    
+      <script src="slick/slick.min.js"></script>    
  <!-- <script src="js/jquery-ui.min.js">
   </script> -->
   
   <script>//переключение языка
-  $( function() {
-    $( "#lang" ).click(function() {
-      $(this).toggleClass("nav-section__eng");
-    });
-  } );
-  </script>
+    $( function() {
+      $( "#lang" ).click(function() {
+        $(this).toggleClass("nav-section__eng");
+      });
+    } );
+    </script>
+
+
+
 
 <script>//появление навигационной панели
   jQuery(function($) {
